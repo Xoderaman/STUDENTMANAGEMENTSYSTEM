@@ -1,0 +1,15 @@
+﻿@model DemoCRUD.Models.Student
+
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h3>@Model.FirstName @Model.LastName</h3>
+    <p><strong>Date of Birth:</strong> @Model.DateOfBirth.ToString("yyyy-MM-dd")</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+</div>
+
+<a href="@Url.Action("Index", "Student")">Back to Student List</a>
